@@ -1,12 +1,15 @@
 import './App.css';
+import Pick from './components/Pick';
 import TypeGuard from './components/TypeGuard';
-import { TYPE_GUARD_DATA } from './mock';
+import { EXAMPLE_DATA } from './mock';
 
 function App() {
   return (
     <div className="App">
       <h3>TypeGuard Example</h3>
-      <TypeGuard data={TYPE_GUARD_DATA} />
+      <TypeGuard data={EXAMPLE_DATA} />
+      <h3>Pick Example</h3>
+      <Pick data={EXAMPLE_DATA} />
     </div>
   );
 }

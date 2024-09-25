@@ -1,4 +1,4 @@
-export const TYPE_GUARD_DATA = [
+export const EXAMPLE_DATA = [
   {
     id: 1,
     name: 'Tom',
@@ -47,5 +47,43 @@ export const TYPE_GUARD_DATA = [
     job: 'scientist',
     lastLoginDate: new Date('2024-03-11'),
     contact: ['sophia@example.com', 'sophia@university.edu'],
+  },
+];
+
+export const PICK_DATA = [
+  {
+    id: 1,
+    name: '김철수',
+    email: 'chulsoo@example.com',
+    age: 28,
+    country: '대한민국',
+  },
+  {
+    id: 2,
+    name: '이영희',
+    email: 'younghee@example.com',
+    age: 32,
+    country: '대한민국',
+  },
+  {
+    id: 3,
+    name: 'John Doe',
+    email: 'john@example.com',
+    age: 35,
+    country: 'USA',
+  },
+  {
+    id: 4,
+    name: '박지민',
+    email: 'jimin@example.com',
+    age: 25,
+    country: '대한민국',
+  },
+  {
+    id: 5,
+    name: 'Emma Watson',
+    email: 'emma@example.com',
+    age: 30,
+    country: 'UK',
   },
 ];
