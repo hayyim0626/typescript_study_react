@@ -74,42 +74,45 @@ const TypeGuard: React.FC<PropType> = (props) => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-      }}
-    >
-      {data.map((el) => (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '8px',
-            padding: '8px',
-            border: `1px solid ${hasNickNameAndHobbyUser(el) ? 'red' : 'blue'}`,
-          }}
-          key={el.id}
-        >
-          <p>ID: {el.id}</p>
-          <p>age: {el.age}</p>
-          <p>Last login time: {formatDateObjToStr(el.lastLoginDate)}</p>
-          {hasNickNameAndHobbyUser(el) ? (
-            <>
-              <p>Nickname: {el.nickName}</p>
-              <p>Hobby: {el.hobby}</p>
-            </>
-          ) : (
-            <>
-              <p>Name: {el.name}</p>
-              <p>Job: {el.job}</p>
-            </>
-          )}
-          {formatContact(el.contact)}
-        </div>
-      ))}
-    </div>
+    <>
+      <h3>TypeGuard Example</h3>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '8px',
+        }}
+      >
+        {data.map((el) => (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+              padding: '8px',
+              border: `1px solid ${hasNickNameAndHobbyUser(el) ? 'red' : 'blue'}`,
+            }}
+            key={el.id}
+          >
+            <p>ID: {el.id}</p>
+            <p>age: {el.age}</p>
+            <p>Last login time: {formatDateObjToStr(el.lastLoginDate)}</p>
+            {hasNickNameAndHobbyUser(el) ? (
+              <>
+                <p>Nickname: {el.nickName}</p>
+                <p>Hobby: {el.hobby}</p>
+              </>
+            ) : (
+              <>
+                <p>Name: {el.name}</p>
+                <p>Job: {el.job}</p>
+              </>
+            )}
+            {formatContact(el.contact)}
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
